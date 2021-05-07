@@ -1,0 +1,356 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  letter-spacing: 0.5px;
+}
+/* Content */
+.content {
+  width: 100%;
+  height: 100%;
+  margin-left: 60px;
+}
+.section {
+  background-image: url(./image/banner.jpg);
+}
+/* Page Container Styles */
+.content {
+  width: 100%;
+  height: 100%;
+  margin-left: 60px;
+}
+
+/* Navigation Tooltip Styling */
+#fp-nav ul li .fp-tooltip {
+  color: white;
+  background-color: #222;
+  padding: 10px;
+}
+
+/* Navigation Styling */
+#fp-nav.fp-left {
+  background-color: #ed2d34;
+  left: 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  width: 60px;
+}
+
+/* Product Page Styling, needed for modal */
+#productPage {
+  position: relative;
+}
+
+/* Coloring the navbar icons white */
+#fp-nav ul li a span,
+#fp-nav ul li a.active span {
+  background-color: white;
+  color: black;
+}
+
+/* Hide title and buttons */
+#product-slider h3,
+#product-slider button {
+  display: none;
+}
+
+/* Product slider active item setting */
+#product-slider .active h3,
+#product-slider .active button {
+  display: block;
+}
+
+/* Modal Styling */
+#modal {
+  display: none;
+}
+
+#modal.modal-active {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  z-index: 100;
+  width: 50vw;
+  height: 50vh;
+  transform: translate(-50%, -50%);
+}
+/* Used to prevent the carousel from stretching the screen */
+.owl-carousel {
+  overflow: hidden;
+  max-width: 1150px;
+}
+
+/* Used to scale down the home image. You can remove this. */
+img {
+  max-width: 40vw;
+}
+
+/* PLEASE START YOUR STYLES UNDERNEATH THIS */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10%;
+}
+.home-details {
+  display: grid;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 40vh;
+  width: 62vh;
+}
+.home-heading {
+  color: #464646;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 54px;
+}
+.air {
+  color: #ed2d32;
+}
+
+.btn {
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50px;
+  padding: 15px;
+  margin-right: 10%;
+  height: 5vh;
+  width: 17vh;
+  text-decoration-line: none;
+  transition: all 0.8s;
+}
+.btn:hover {
+  visibility: visible;
+  animation-delay: 0.8s;
+  background-color: #ed2d34;
+  color: white;
+  border: 3px solid #ed2d34;
+}
+.page-header-container {
+  font-size: 25px;
+  font-weight: bold;
+}
+.sneaker-slide {
+  max-width: 60%;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  background-color: #ffffff;
+  transition: 0.5s ease;
+  position: relative;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.testimonial {
+  visibility: visible;
+  text-align: center;
+  padding: 15%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  min-height: 1px;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.owl-carousel .owl-item img {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  border-radius: 50%;
+  border-style: none;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.testimonial-message {
+  margin: 0 0 25px;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+  font-weight: 200;
+  font-size: 18px;
+  color: #464646;
+  text-align: center;
+}
+.page-heading {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.2;
+  font-family: "Montserrat", sans-serif;
+  overflow-wrap: break-word;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  text-align: center;
+}
+.page-subtitle {
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  color: #ed2d34;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  line-height: 1.2;
+}
+.testimonial-name {
+  font-size: 20px;
+  font-weight: normal;
+  color: #464646;
+  font-family: "Roboto", sans-serif;
+}
+#testimonialPage.content {
+  max-width: 1140px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.icon-quotes {
+  font-size: 24px;
+  transition: 0.2s;
+  cursor: pointer;
+  line-height: 1.3;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.fas {
+  color: #c6c6c6;
+  font-weight: 900;
+  display: inline;
+  font-family: "Font Awesome 5 Free";
+}
+#social {
+  display: flex;
+  align-items: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+.fab {
+  font-family: "Font Awesome 5 Brands";
+}
+.slider-bottom .slider-social {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1111;
+}
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+ul {
+  padding: 0;
+  margin: 0 0 25px;
+}
+.slider-social ul > li {
+  float: left;
+}
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  text-align: center;
+}
+
+.slider-bottom .slider-social a {
+  color: #464646;
+}
+.slider-social a {
+  justify-content: center;
+  height: 40px;
+  line-height: 38px;
+  width: 40px;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  border-radius: 50px;
+  color: #000000;
+  font-size: 16px;
+  margin: 2px;
+  border: 1px solid transparent;
+}
+a {
+  text-decoration: none;
+}
+.fab {
+  color: #464646;
+  font-family: "Font Awesome 5 Brands";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  transition: 0.3s;
+}
+.fa-facebook-f:hover {
+  background: #ff0000;
+  color: #fff;
+  border: 20px solid #ff0000;
+}
+.fa-twitter:hover {
+  background: #ff0000;
+  color: #fff;
+  border: 20px solid #ff0000;
+}
+.fa-instagram:hover {
+  background: #ff0000;
+  color: #fff;
+  border: 20px solid #ff0000;
+}
+.fa-linkedin-in:hover {
+  background: #ff0000;
+  color: #fff;
+  border: 20px solid #ff0000;
+}
